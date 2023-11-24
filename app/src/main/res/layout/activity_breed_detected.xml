@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BreedDetectedActivity">
+
+    <View
+        android:id="@+id/design_View"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.43"
+        android:background="@drawable/design_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/design_View"
+        app:layout_constraintTop_toTopOf="@id/design_View"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/catBreed_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog's Scanner"
+        android:textColor="@color/secondry_dark_brown"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/inter_extrabold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/design_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/design_View"
+        app:layout_constraintTop_toBottomOf="@id/design_View"
+        android:src="@drawable/ic_smallround_icon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/breedNameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="German Shepherd"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:textColor="@color/secondry_dark_brown"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/design_circle"
+        app:layout_constraintStart_toEndOf="@+id/design_circle"
+        app:layout_constraintTop_toTopOf="@+id/design_circle" />
+
+    <TextView
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Share"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
+        android:paddingVertical="@dimen/_5sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:drawableEnd="@drawable/ic_share"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/breedNameResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/breedNameResult"
+        app:layout_constraintTop_toTopOf="@+id/breedNameResult" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Result"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/secondry_dark_brown"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintStart_toStartOf="@+id/design_circle"
+        app:layout_constraintTop_toBottomOf="@+id/design_circle" />
+
+    <TextView
+        android:id="@+id/breedShortDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Meet the Akita, a noble and powerful breed known for its loyalty and dignified presence."
+        android:textSize="@dimen/_13sdp"
+        android:background="@drawable/textview_bg"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/secondry_dark_brown"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
