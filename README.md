@@ -30,7 +30,7 @@ Built using Kotlin and Machine Learning technologies to deliver accurate and fas
 
 | Home Screen | Result Screen |
 |-------------|---------------|
-| ![Home](screenshots/home) | ![Result](screenshots/result) |
+| ![Home](screenshots/home.jpeg) | ![Result](screenshots/result.jpg) |
 
 ---
 
